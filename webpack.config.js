@@ -2,13 +2,14 @@ const path = require("path")
 const Dotenv = require("dotenv-webpack")
 
 module.exports = {
+  mode: "development", 
   entry: ["babel-polyfill", "./client/index.js"],
   output: {
-    path: path.join(__dirname, "client"),
+    path: path.resolve(__dirname, "client"),
     filename: "bundle.js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
         loader: "babel-loader",
