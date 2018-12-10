@@ -27,7 +27,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "dev": "webpack --mode development && nodemon --exec babel-node -- bin/www",
-    "start": "webpack && nodemon --exec babel-node -- bin/www"
+    "start": "webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
